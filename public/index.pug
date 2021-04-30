@@ -1,0 +1,30 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title CRUD app using Node.JS, Express &amp;&nbsp;MongoDB | Mayur Nalwala
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='./css/main.css')
+nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+  .container
+    a.navbar-brand(href='/')
+      b CRUD
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link.active(href='http://localhost:3000/create') Add New Review
+header.py-4.text-center.border-bottom
+  h2.display-4 All Reviews
+section.all_posts.mt-5
+  .container
+    #posts_row.row
+      // cards will be rendered here via javascript
+    #popUps
+      // each card modals
+script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js')
+script(src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js')
+script(src='../FrontEnd/js/index.js')

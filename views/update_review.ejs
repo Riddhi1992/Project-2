@@ -1,0 +1,109 @@
+<!-- Include header -->
+<%- include('includes/_header.ejs') %>
+<!-- Include header -->
+
+<!-- Include nav -->
+<%- include('includes/_nav.ejs') %>
+<!-- Include nav -->
+
+<!-- Submit your review -->
+<main id="site-main">
+  <div id="submitReview">
+    <div class="login m-5 p-5 border-1 shadow-lg">
+      <div class="box-nav d-flex justify-between mt-5 mb-3">
+        <a href="http://localhost:3000/review" class="p-3"
+          ><i class="fas fa-angle-double-left"></i> All Reviews</a
+        >
+      </div>
+      <h2 class="text-center p-2">Update Reviews</h2>
+      <p class="text-center mb-5">Use the below form to update review</p>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <!-- Form handling -->
+          <form
+            class="form-floating"
+            method="POST"
+            id="update_review"
+            action="/update-review/?id=user._id"
+          >
+            <div class="row new_review">
+              <div class="form-floating mb-3 col-4 w-100">
+                <input type="hidden" name="id" value="<%= user._id %>" />
+                <input
+                  type="text"
+                  class="form-control w-100"
+                  id="floatingInput"
+                  value="<%= user.title %>"
+                  name="title"
+                  placeholder="Title"
+                />
+                <label for="floatingInput" class="ps-4">Title</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-floating mb-3 col-4 w-100">
+                <input
+                  type="text"
+                  class="form-control w-100"
+                  id="floatingInput"
+                  value="<%= user.author %>"
+                  name="author"
+                  placeholder="Author"
+                />
+                <label for="floatingInput" class="ps-4">Author</label>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="form-floating mb-3 col-4 w-100">
+                <select
+                  class="form-select"
+                  id="floatingSelect"
+                  aria-label="Floating label select example"
+                >
+                  <option selected>Genres</option>
+                  <option value="1">Romance</option>
+                  <option value="2">Art</option>
+                  <option value="3">Cook</option>
+                  <option value="4">Travel</option>
+                  <option value="5">Science/Technology</option>
+                </select>
+                <label for="floatingSelect" class="ps-4">Select Genres</label>
+              </div>
+            </div> -->
+            <div class="row">
+              <div class="form-floating mb-3 col-4 w-100">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    value="<%= user.desc %>"
+                    id="floatingTextarea"
+                    name="desc"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="floatingTextarea">Reviews</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <button
+                type="submit"
+                class="p-2 btn btn-primary w-50 mt-4 loginButton col-4"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+          <!-- /Form handling -->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- /Submit your review -->
+
+<!-- Include footer -->
+<%-include('includes/_footer.ejs')%>
+<!-- Include footer -->

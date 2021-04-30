@@ -1,0 +1,35 @@
+<!-- Include header -->
+<%- include('includes/_header.ejs') %>
+<!-- Include header -->
+
+<!-- Include nav -->
+<%- include('includes/_nav.ejs') %>
+<!-- Include nav -->
+
+<!-- Submit your review -->
+<main id="site-main">
+  <div id="submitReview">
+    <div class="login m-5 p-5 border-1 shadow-lg">
+      <div class="box-nav d-flex justify-between mt-5 mb-3">
+        <a href="http://localhost:3000/review" class="p-3"
+          ><i class="fas fa-angle-double-left"></i> All Reviews</a
+        >
+      </div>
+      <h2 class="text-center p-2">Add new Reviews</h2>
+      <p class="text-center mb-5">Use the below form to add new review</p>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <!-- Include form -->
+          <%-include('includes/_form.ejs')%>
+          <!-- /Include form -->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- /Submit your review -->
+
+<!-- Include footer -->
+<%-include('includes/_footer.ejs')%>
+<!-- Include footer -->

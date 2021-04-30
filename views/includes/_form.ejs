@@ -1,0 +1,68 @@
+<!-- Form handling -->
+<form class="form-floating" action="/create" method="POST" id="add_review">
+  <div class="row new_review">
+    <div class="form-floating mb-3 col-4 w-100">
+      <input
+        type="text"
+        class="form-control w-100"
+        id="floatingInput"
+        name="title"
+        placeholder="Title"
+      />
+      <label for="floatingInput" class="ps-4">Title</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-floating mb-3 col-4 w-100">
+      <input
+        type="text"
+        class="form-control w-100"
+        id="floatingInput"
+        name="author"
+        placeholder="Author"
+      />
+      <label for="floatingInput" class="ps-4">Author</label>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="form-floating mb-3 col-4 w-100">
+      <select
+        class="form-select"
+        id="floatingSelect"
+        aria-label="Floating label select example"
+      >
+        <option selected>Genres</option>
+        <option value="1">Romance</option>
+        <option value="2">Art</option>
+        <option value="3">Cook</option>
+        <option value="4">Travel</option>
+        <option value="5">Science/Technology</option>
+      </select>
+      <label for="floatingSelect" class="ps-4">Select Genres</label>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="form-floating mb-3 col-4 w-100">
+      <div class="form-floating">
+        <textarea
+          class="form-control"
+          placeholder="Leave a comment here"
+          id="floatingTextarea"
+          name="desc"
+          style="height: 100px"
+        ></textarea>
+        <label for="floatingTextarea">Reviews</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <button
+      type="submit"
+      class="p-2 btn btn-primary w-50 mt-4 loginButton col-4"
+    >
+      Submit
+    </button>
+  </div>
+</form>
+<!-- /Form handling -->

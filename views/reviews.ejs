@@ -1,0 +1,44 @@
+<!-- Include header -->
+<%- include('includes/_header.ejs') %>
+<!-- Include header -->
+
+<!-- Include nav -->
+<%- include('includes/_nav.ejs') %>
+<!-- Include nav -->
+
+<!-- Main Site -->
+<main id="site-main">
+  <div class="container m-auto">
+    <div class="box-nav d-flex justify-between mt-5 mb-3">
+      <a href="http://localhost:3000/add-review" class="border shadow">
+        <span class="text-gradient p-3">+ Add Reviews</span>
+      </a>
+    </div>
+
+    <!-- Form handling -->
+    <form action="/" method="POST">
+      <table class="table">
+        <thead class="thead-dark table-dark">
+          <tr class="text-center">
+            <th>ID</th>
+            <th>Title of Book</th>
+            <th>Author</th>
+            <th>Reviews</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Include show -->
+          <%-include('includes/_show.ejs')%>
+          <!-- Include show -->
+        </tbody>
+      </table>
+    </form>
+    <!-- /Form handling -->
+  </div>
+</main>
+<!-- /Main Site -->
+
+<!-- Include footer -->
+<%-include('includes/_footer.ejs')%>
+<!-- Include footer -->
